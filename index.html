@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>NeoDictionary</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="bg-anim"></div>
+
+  <div class="app">
+    <h1>NeoDictionary 📖</h1>
+    <p class="tagline">Words, but make them legendary.</p>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      🌙
+      <label class="switch">
+        <input type="checkbox" id="themeToggle">
+        <span class="slider"></span>
+      </label>
+      ☀️
+    </div>
+
+    <!-- Word of the Day -->
+    <div class="wod" id="wod">✨ Word of the Day loading...</div>
+
+    <!-- Search -->
+    <div class="search-box">
+      <input type="text" id="wordInput" placeholder="Type a word..." />
+      <button id="searchBtn">Search</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+
+    <!-- Result -->
+    <div class="result" id="result"></div>
+
+    <!-- History -->
+    <div class="history">
+      <h3>Recent Searches</h3>
+      <div id="historyList"></div>
+    </div>
+  </div>
+
+  <!-- Sound -->
+  <audio id="clickSound" src="https://assets.mixkit.co/sfx/preview/mixkit-modern-click-box-check-1120.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
